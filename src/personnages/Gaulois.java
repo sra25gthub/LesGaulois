@@ -24,17 +24,20 @@ public class Gaulois {
 
 	public void frapper(Romain romain) {
 		System.out.println(nom + "envoie un grand coup dans la machoire de" + romain.getNom());
-		romain.recevoirCoup(force / 3);
 
+		int forceCoup = (force * effetPotion) /3;
+		romain.recevoirCoup(forceCoup);
+		if (effetPotion > 1) {
+			effetPotion--;
+		}
+	}
+	
+	public void boirePotion(int forcePotion) {
+		this.effetPotion = forcePotion;
 	}
 
 	@Override
 	public String toString() {
 		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
 	}
-	
-	public static void main(String[] args) {
-
-	}
-
 }
