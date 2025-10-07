@@ -19,11 +19,11 @@ public class Gaulois {
 	}
 
 	private String prendreParole() {
-		return "Le gaulois " + nom + " : ";
+		return "Le Gaulois " + nom + " : ";
 	}
 
 	public void frapper(Romain romain) {
-		System.out.println(nom + "envoie un grand coup dans la machoire de" + romain.getNom());
+		System.out.println(nom + " envoie un grand coup dans la machoire de " + romain.getNom());
 
 		int forceCoup = (force * effetPotion) /3;
 		romain.recevoirCoup(forceCoup);
