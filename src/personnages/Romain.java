@@ -26,7 +26,7 @@ public class Romain {
 		if (force > 0) {
 			parler("Aïe");
 		} else {
-			parler("J'abondonne... ");
+			parler("J'abondonne ! ");
 		}
 	}
 
